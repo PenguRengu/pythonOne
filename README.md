@@ -67,9 +67,9 @@ program.build()
 ```
 We can now run this:
 ```
-python example.py
+% python example.py
 ```
 And then run the output:
 ```
-python output.py
+% python output.py
 ```

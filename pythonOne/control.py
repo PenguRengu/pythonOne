@@ -18,17 +18,17 @@ def if_(bool_exp):
     close()
 @contextmanager
 def else_if(bool_exp):
-    p.current_program.indent -= 1
+    #p.current_program.indent -= 1
     if p.current_program.lang == "py":
         p.current_program.add("elif %s:" % bool_exp)
     if p.current_program.lang == "cs":
-        p.current_program.add("} else if (%s) {" % bool_exp)
+        p.current_program.add("else if (%s) {" % bool_exp)
     p.current_program.indent += 1
     yield
     close()
 @contextmanager
 def else_():
-    p.current_program.indent -= 1
+    #p.current_program.indent -= 1
     if p.current_program.lang == "py":
         p.current_program.add("else:")
     if p.current_program.lang == "cs":

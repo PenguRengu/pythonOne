@@ -13,6 +13,7 @@ Add statement 2 to ouput
 Add statement 3 to ouput
 Run output
 ```
+Another important is that because of this, you can't use normal python, but instead you have to use pythonOne's functions.
 ## An example
 Here's an example program:
 ```
